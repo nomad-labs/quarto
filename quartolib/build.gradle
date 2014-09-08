@@ -2,4 +2,11 @@ apply plugin: 'java'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'junit:junit:4.11'
+}
+
+test {
+    testLogging {
+        exceptionFormat = 'full'
+    }
 }
