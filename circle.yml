@@ -1,3 +1,8 @@
 dependencies:
-    pre:
-      - mv ci.properties local.properties
+  pre:
+    - mv ci.properties local.properties
+
+test:
+  override:
+    - ./gradlew build
+
